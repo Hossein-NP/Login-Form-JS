@@ -24,7 +24,17 @@ const userInputKeypress = () => {
   console.log("key")
 }
 const passwordInputFocus = () => {
-  console.log("user")
+  let eyePosition = setInterval(() => {
+    if(leftEyeTop == 58) {
+      clearInterval(eyePosition)
+    }
+
+    leftEye.style.top = leftEyeTop-- + 'px';
+    leftEye.style.left = leftEyeLeft++ + 'px';
+    rightEye.style.top = rightEyeTop-- + 'px';
+    rightEye.style.left = rightEyeLeft-- + 'px';
+    
+  }, 20)
 }
 const passwordInputBlur = () => {
   console.log("user")

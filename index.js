@@ -13,3 +13,31 @@ let rightEyeTop = 80;
 let rightEyeLeft = 232;
 let rightEyePaddingLeft = 0;
 let rightEyePaddingTop = 0;
+
+const userInputFocus = () => {
+  console.log("user")
+}
+const userInputBlur = () => {
+  console.log("user")
+}
+const userInputKeypress = () => {
+  console.log("key")
+}
+const passwordInputFocus = () => {
+  console.log("user")
+}
+const passwordInputBlur = () => {
+  console.log("user")
+}
+const passwordInputKeypress = () => {
+  console.log("key")
+}
+
+
+username.addEventListener('focus', userInputFocus);
+username.addEventListener('blur', userInputBlur);
+username.addEventListener('keypress', userInputKeypress);
+
+password.addEventListener('focus', passwordInputFocus);
+password.addEventListener('blur', passwordInputBlur);
+password.addEventListener('keypress', passwordInputKeypress);

@@ -15,32 +15,83 @@ let rightEyePaddingLeft = 0;
 let rightEyePaddingTop = 0;
 
 const userInputFocus = () => {
-  console.log("user")
+  let eyePosition = setInterval(() => {
+    if(leftEyePaddingTop === 22) {
+      clearInterval(eyePosition)
+    }
+
+    leftEye.style.paddingTop = leftEyePaddingTop + 'px';
+    leftEye.style.left = leftEyeLeft + 'px';
+
+    leftEyePaddingTop++
+    leftEyeLeft--
+
+    rightEye.style.paddingTop = rightEyePaddingTop + 'px';
+    rightEye.style.left = rightEyeLeft + 'px';
+
+    rightEyePaddingTop++
+    rightEyeLeft--
+
+  }, 10)
 }
+
 const userInputBlur = () => {
-  console.log("user")
+  let eyePosition = setInterval(() => {
+    if(leftEyePaddingTop === 0) {
+      clearInterval(eyePosition)
+    }
+
+    leftEye.style.paddingTop = leftEyePaddingTop + 'px';
+    leftEye.style.left = leftEyeLeft + 'px';
+
+    leftEyePaddingTop--
+    leftEyeLeft++
+
+    rightEye.style.paddingTop = rightEyePaddingTop + 'px';
+    rightEye.style.left = rightEyeLeft + 'px';
+
+    rightEyePaddingTop--
+    rightEyeLeft++
+
+  }, 10)
 }
+
 const userInputKeypress = () => {
   console.log("key")
 }
+
 const passwordInputFocus = () => {
   let eyePosition = setInterval(() => {
-    if(leftEyeTop == 58) {
+    if(leftEyeTop === 56) {
       clearInterval(eyePosition)
     }
 
     leftEye.style.top = leftEyeTop-- + 'px';
     leftEye.style.left = leftEyeLeft++ + 'px';
+
     rightEye.style.top = rightEyeTop-- + 'px';
     rightEye.style.left = rightEyeLeft-- + 'px';
-    
-  }, 20)
+
+  }, 10)
 }
+
 const passwordInputBlur = () => {
-  console.log("user")
+  let eyePosition = setInterval(() => {
+    if(leftEyeTop === 80) {
+      clearInterval(eyePosition)
+    }
+
+    leftEye.style.top = leftEyeTop++ + 'px';
+    leftEye.style.left = leftEyeLeft-- + 'px';
+
+    rightEye.style.top = rightEyeTop++ + 'px';
+    rightEye.style.left = rightEyeLeft++ + 'px';
+
+  }, 10)
 }
+
 const passwordInputKeypress = () => {
-  console.log("key")
+  
 }
 
 

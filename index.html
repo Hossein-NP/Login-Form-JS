@@ -9,26 +9,26 @@
   <body class="h-screen flex items-center justify-center bg-gray-400">
 
     <!-- @_@~~~~~~Form Login~~~~~~@@  -->
-     <div class="form-wrapper flex flex-col justify-center items-center bg-[#fcf569] rounded-lg size-[600px]">
+     <div class="form-wrapper flex flex-col justify-center items-center bg-[#fcf569] rounded-4xl size-150">
 
       <!-- Form Peny Wise Character  -->
-      <div class="form-img relative size-9/12 bg-amber-700">
-        <img class="absolute top-0 right-auto left-auto" src="img/bobno.png" alt="">
-        <img class="absolute" src="img/eye.png" alt="">
-        <img class="absolute" src="img/eye.png" alt="">
-        <img class="absolute" src="img/belt.png" alt="">
+      <div class="form-img relative size-8/12">
+        <img class="absolute right-1/2 translate-x-1/2 left-auto" src="img/bobno.png" alt="">
+        <img id="right-eye" class="img-right absolute top-20 left-58" src="img/eye.png" alt="">
+        <img id="left-eye" class="absolute top-20 left-28.5" src="img/eye.png" alt="">
+        <img class="absolute right-1/2 translate-x-1/2 top-80" src="img/belt.png" alt="">
       </div>
 
       <!-- Form Inputs  -->
-      <form action="" method="get">
-        <input type="text" name="username" placeholder="Enter Username.." id="username">
-        <input type="password" name="password" placeholder="Enter Password.." id="password">
+      <form action="" method="get" class="flex flex-col justify-center gap-4 w-[50%] mx-auto">
+        <input class="border border-solid border-gray-400 rounded-md px-1 py-2 caret-fuchsia-500 outline-0" type="text" name="username" placeholder="Enter Username.." id="username">
+        <input class="border border-solid border-gray-400 rounded-md px-1 py-2 caret-fuchsia-500 outline-0" type="password" name="password" placeholder="Enter Password.." id="password">
       </form>
      </div>
     <!-- *_*~~~~~~End Form Login~~~~~~**  -->
     
     
 
-    <script src="app.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
